@@ -196,18 +196,21 @@ margin: 1.2rem 0;
 height: 90vh;
 display: flex;
 flex-direction: column;
-gap: 3rem;
+/* gap: 3rem; */
 justify-content: center;
 }
 
 .top_contact {
 max-width: 800px;
 display: grid;
+justify-content: space-between;
 margin: 0 auto;
 grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
+
 .contact_way {
 display: flex;
+justify-content: center;
 gap: 0rem;
 align-items: center;
 }
@@ -218,10 +221,11 @@ font-size: 2rem;
 .contact_way h3 {
 font-size: 2rem;
 font-weight: bold;
-margin: 0 auto 0 8px;
+width: 150px;
+/* margin: 0 auto 0 8px; */
 }
 
-.bottom_contact {
+/* .bottom_contact {
 max-width: 400px;
 gap: 1rem;
 display: grid;
@@ -231,7 +235,7 @@ grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 .bottom_contact img{
     background-color:rgb(249, 250, 252);
     padding: 5px;
-}
+} */
 footer {
     background: rgb(21, 50, 81);
     padding: 1rem;
@@ -239,6 +243,181 @@ footer {
     font-size: 1.1rem;
     text-align: center;
 }
+
+/* ******************************************************************************************************************************************** */
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+    }
+
+    ul {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+    ul li{
+        font-size: small;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #hero {
+        height: auto;
+        padding: 50px 0;
+        height: 480px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .yashi {
+        width: 180px;
+        height: 270px;
+        margin: 0 auto;
+    }
+
+    .hero-cont {
+        font-size: 20px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .hi_text {
+        font-size: 3rem;
+    }
+
+    .name_text {
+        font-size: 2rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+    
+      #hero .container {
+        flex-direction: column;
+      }
+      .hero_img {
+        display: grid;
+        place-items: center;
+      }
+}
+
+
+
+@media (max-width: 768px) {
+    #project h2 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .grid_item {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact .top_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .bottom_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact h2 {
+        font-size: 3rem;
+    }
+
+    .top_contact {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+
+
+}
+
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.top_contact {
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.contact_way {
+    display: flex;
+    gap: 0rem;
+    align-items: center;
+}
+
+.contact_way i {
+    font-size: 2rem;
+}
+
+.contact_way h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto 0 8px;
+}
+
+.bottom_contact {
+    max-width: 400px;
+    gap: 1rem;
+    display: grid;
+    margin: 0 350px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.bottom_contact img {
+    background-color: rgb(249, 250, 252);
+    padding: 5px;
+}
+
+footer {
+    background: rgb(21, 50, 81);
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+} */
+
+/* ******************************************************************************************************************************************** */
+
 /* .projects{
     background-color:rgb(21, 50, 81);
     color: aliceblue;
